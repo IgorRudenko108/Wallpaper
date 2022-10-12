@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221011155438">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221012214724">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <body>
 
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-scroll data-scroll-show="100">
 			<div class="header__container">
 				<div class="header__inner">
 					<div class="header__item header__item--logo">
@@ -59,22 +59,22 @@
 
 								<div class="burger__contacts">
 									<div class="burger__contacts-inner">
-										<ul class="burger__contacts-list">
-											<li class="burger__contacts-item">
-												<a class="burger__contacts-link" href="#">
-													<img class="burger__contacts-icon" src="img/icons/instagram.svg" alt="instagram">
+										<ul class="burger__contacts-list contacts-list">
+											<li class="burger__contacts-item contacts-item">
+												<a class="burger__contacts-link contacts-item" href="#">
+													<img class="burger__contacts-icon contacts-icon" src="img/icons/instagram.svg" alt="instagram">
 												</a>
 											</li>
 
-											<li class="burger__contacts-item">
-												<a class="burger__contacts-link" href="#">
-													<img class="burger__contacts-icon" src="img/icons/telegram.svg" alt="telegram">
+											<li class="burger__contacts-item contacts-item">
+												<a class="burger__contacts-link contacts-link" href="#">
+													<img class="burger__contacts-icon contacts-icon" src="img/icons/telegram.svg" alt="telegram">
 												</a>
 											</li>
 
-											<li class="burger__contacts-item">
-												<a class="burger__contacts-link" href="#">
-													<img class="burger__contacts-icon" src="img/icons/facebook.svg" alt="facebook">
+											<li class="burger__contacts-item contacts-item">
+												<a class="burger__contacts-link contacts-link" href="#">
+													<img class="burger__contacts-icon contacts-icon" src="img/icons/facebook.svg" alt="facebook">
 												</a>
 											</li>
 										</ul>
@@ -93,9 +93,9 @@
 					<div class="header__item header__item--controls">
 						<div class="header__controls">
 							<div class="header__guest">
-								<button class="header__subscribe header-btn accent-btn">Subscribe</button>
+								<button class="header__subscribe btn accent-btn">Subscribe</button>
 								<div class="header__login-wrapper" data-da=".header__menu-body,479.98,1">
-									<button class="header__login header-btn border-gradient">Login</button>
+									<button class="header__login btn border-btn">Login</button>
 								</div>
 							</div>
 
@@ -164,9 +164,9 @@
 
 										<div class="popular-search__slide swiper-slide">
 											<div class="popular-search__body">
-												<ul class="popular-search__list">
+												<ul class="search__list">
 
-													<li class="popular-search__item popular-search__item--1">
+													<li class="search__item search__item--1">
 														<div class="popular-search__top info-box">
 															<button class="popular-search__like like-btn">
 																<svg class="like">
@@ -181,7 +181,7 @@
 															</div>
 														</div>
 
-														<a class="popular-search__link" href="#">
+														<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
 															<picture><source data-srcset="img/popular-search/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/1.jpg" alt="img-1"></picture>
 														</a>
 
@@ -192,7 +192,7 @@
 														</div>
 													</li>
 
-													<li class="popular-search__item popular-search__item--2">
+													<li class="search__item search__item--2">
 														<div class="popular-search__top info-box">
 															<button class="popular-search__like like-btn">
 																<svg class="like">
@@ -207,7 +207,7 @@
 															</div>
 														</div>
 
-														<a class="popular-search__link" href="#">
+														<a class="popular-search__link" data-popup="#image-preview__popup" href="#">
 															<picture><source data-srcset="img/popular-search/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/2.jpg" alt="img-2"></picture>
 														</a>
 
@@ -218,7 +218,7 @@
 														</div>
 													</li>
 
-													<li class="popular-search__item popular-search__item--3">
+													<li class="search__item search__item--3">
 														<div class="popular-search__top info-box">
 															<button class="popular-search__like like-btn">
 																<svg class="like">
@@ -233,7 +233,7 @@
 															</div>
 														</div>
 
-														<a class="popular-search__link" href="#">
+														<a class="popular-search__link" data-popup="#image-preview__popup" href="#">
 															<picture><source data-srcset="img/popular-search/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/3.jpg" alt="img-3"></picture>
 														</a>
 
@@ -244,7 +244,7 @@
 														</div>
 													</li>
 
-													<li class="popular-search__item popular-search__item--4">
+													<li class="search__item search__item--4">
 														<div class="popular-search__top info-box">
 															<button class="popular-search__like like-btn">
 																<svg class="like">
@@ -259,7 +259,7 @@
 															</div>
 														</div>
 
-														<a class="popular-search__link" href="#">
+														<a class="popular-search__link" data-popup="#image-preview__popup" href="#">
 															<picture><source data-srcset="img/popular-search/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/4.jpg" alt="img-4"></picture>
 														</a>
 
@@ -270,7 +270,7 @@
 														</div>
 													</li>
 
-													<li class="popular-search__item popular-search__item--5">
+													<li class="search__item search__item--5">
 														<div class="popular-search__top info-box">
 															<button class="popular-search__like like-btn">
 																<svg class="like">
@@ -285,7 +285,7 @@
 															</div>
 														</div>
 
-														<a class="popular-search__link" href="#">
+														<a class="popular-search__link" data-popup="#image-preview__popup" href="#">
 															<picture><source data-srcset="img/popular-search/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/5.jpg" alt="img-5"></picture>
 														</a>
 
@@ -296,7 +296,7 @@
 														</div>
 													</li>
 
-													<li class="popular-search__item popular-search__item--6">
+													<li class="search__item search__item--6">
 														<div class="popular-search__top info-box">
 															<button class="popular-search__like like-btn">
 																<svg class="like">
@@ -311,7 +311,7 @@
 															</div>
 														</div>
 
-														<a class="popular-search__link" href="#">
+														<a class="popular-search__link" data-popup="#image-preview__popup" href="#">
 															<picture><source data-srcset="img/popular-search/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/6.jpg" alt="img-6"></picture>
 														</a>
 
@@ -325,339 +325,14 @@
 											</div>
 										</div>
 
-										<div class="popular-search__slide swiper-slide">
-											<div class="popular-search__body">
-												<ul class="popular-search__list">
-
-													<li class="popular-search__item popular-search__item--1">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/1.jpg" alt="img-1"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Interior</span>
-															<span class="popular-search__category category-label">Desktop</span>
-															<span class="popular-search__category category-label">Computer</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--2">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/2.jpg" alt="img-2"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Landscape</span>
-															<span class="popular-search__category category-label">Nature</span>
-															<span class="popular-search__category category-label">Desert</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--3">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/3.jpg" alt="img-3"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">City</span>
-															<span class="popular-search__category category-label">Skyscraper</span>
-															<span class="popular-search__category category-label">Megapolis</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--4">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/4.jpg" alt="img-4"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Landscape</span>
-															<span class="popular-search__category category-label">Stars</span>
-															<span class="popular-search__category category-label">Night</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--5">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/5.jpg" alt="img-5"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Food</span>
-															<span class="popular-search__category category-label">Berries</span>
-															<span class="popular-search__category category-label">Macro</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--6">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/6.jpg" alt="img-6"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Landscape</span>
-															<span class="popular-search__category category-label">Man</span>
-															<span class="popular-search__category category-label">Rock</span>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-
-										<div class="popular-search__slide swiper-slide">
-											<div class="popular-search__body">
-												<ul class="popular-search__list">
-
-													<li class="popular-search__item popular-search__item--1">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/1.jpg" alt="img-1"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Interior</span>
-															<span class="popular-search__category category-label">Desktop</span>
-															<span class="popular-search__category category-label">Computer</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--2">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/2.jpg" alt="img-2"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Landscape</span>
-															<span class="popular-search__category category-label">Nature</span>
-															<span class="popular-search__category category-label">Desert</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--3">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/3.jpg" alt="img-3"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">City</span>
-															<span class="popular-search__category category-label">Skyscraper</span>
-															<span class="popular-search__category category-label">Megapolis</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--4">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/4.jpg" alt="img-4"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Landscape</span>
-															<span class="popular-search__category category-label">Stars</span>
-															<span class="popular-search__category category-label">Night</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--5">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/5.jpg" alt="img-5"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Food</span>
-															<span class="popular-search__category category-label">Berries</span>
-															<span class="popular-search__category category-label">Macro</span>
-														</div>
-													</li>
-
-													<li class="popular-search__item popular-search__item--6">
-														<div class="popular-search__top info-box">
-															<button class="popular-search__like like-btn">
-																<svg class="like">
-																	<use xlink:href="#like"></use>
-																</svg>
-															</button>
-															<div class="popular-search__info search__info">
-																<div class="popular-search__saved saved">
-																	<span class="popular-search__save-count save-count">211</span>
-																</div>
-																<div class="popular-search__viewport viewport">1920x1080</div>
-															</div>
-														</div>
-
-														<a class="popular-search__link" href="#">
-															<picture><source data-srcset="img/popular-search/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/6.jpg" alt="img-6"></picture>
-														</a>
-
-														<div class="popular-search__bottom category-label-box">
-															<span class="popular-search__category category-label">Landscape</span>
-															<span class="popular-search__category category-label">Man</span>
-															<span class="popular-search__category category-label">Rock</span>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
 									</div>
 									<div class="swiper-pagination"></div>
 								</div>
 
-								<div class="popular-search__mobile">
-									<ul class="popular-search__mobile-list">
+								<div class="search__mobile">
+									<ul class="search__mobile-list">
 
-										<li class="popular-search__item popular-search__item--1">
+										<li class="search__item search__item--1">
 											<div class="popular-search__top info-box">
 												<button class="popular-search__like like-btn">
 													<svg class="like">
@@ -672,7 +347,7 @@
 												</div>
 											</div>
 
-											<a class="popular-search__link" href="#">
+											<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
 												<picture><source data-srcset="img/popular-search/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/1.jpg" alt="img-1"></picture>
 											</a>
 
@@ -683,7 +358,7 @@
 											</div>
 										</li>
 
-										<li class="popular-search__item popular-search__item--2">
+										<li class="search__item search__item--2">
 											<div class="popular-search__top info-box">
 												<button class="popular-search__like like-btn">
 													<svg class="like">
@@ -709,7 +384,7 @@
 											</div>
 										</li>
 
-										<li class="popular-search__item popular-search__item--3">
+										<li class="search__item search__item--3">
 											<div class="popular-search__top info-box">
 												<button class="popular-search__like like-btn">
 													<svg class="like">
@@ -735,7 +410,7 @@
 											</div>
 										</li>
 
-										<li class="popular-search__item popular-search__item--4">
+										<li class="search__item search__item--4">
 											<div class="popular-search__top info-box">
 												<button class="popular-search__like like-btn">
 													<svg class="like">
@@ -761,7 +436,7 @@
 											</div>
 										</li>
 
-										<li class="popular-search__item popular-search__item--5">
+										<li class="search__item search__item--5">
 											<div class="popular-search__top info-box">
 												<button class="popular-search__like like-btn">
 													<svg class="like">
@@ -787,7 +462,7 @@
 											</div>
 										</li>
 
-										<li class="popular-search__item popular-search__item--6">
+										<li class="search__item search__item--6">
 											<div class="popular-search__top info-box">
 												<button class="popular-search__like like-btn">
 													<svg class="like">
@@ -814,6 +489,8 @@
 										</li>
 									</ul>
 								</div>
+
+								<button class="show-more-btn btn border-gradient">See more from Popular</button>
 							</div>
 						</div>
 					</div>
@@ -860,17 +537,258 @@
 </svg> -->
 
 
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="image-preview__popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__text">
+					<div class="popup-top">
+						<select name="form[]" data-scroll data-class-modif="form">
+							<option data-class="option-class" value="1" selected>Free Download</option>
+							<option data-class="option-class" value="2">
+								<p>Small (640x480)</p>
+							</option>
+							<option data-class="option-class" value="3">Medium <p>(1920x1440)</p>
+							</option>
+							<option data-class="option-class" value="4">Large <p>(2400x1800)</p>
+							</option>
+							<option data-class="option-class" value="5">Original Size <p>(8000x4000)</p>
+							</option>
+						</select>
+
+						<div class="popup-controls--pc">
+							<ul class="popup__contacts-list contacts-list">
+								<li class="contacts-item">
+									<a class="contacts-item" href="#">
+										<img class="contacts-icon" src="img/icons/instagram.svg" alt="instagram">
+									</a>
+								</li>
+
+								<li class="contacts-item">
+									<a class="contacts-link" href="#">
+										<img class="contacts-icon" src="img/icons/telegram.svg" alt="telegram">
+									</a>
+								</li>
+
+								<li class="contacts-item">
+									<a class="contacts-link" href="#">
+										<img class="contacts-icon" src="img/icons/facebook.svg" alt="facebook">
+									</a>
+								</li>
+							</ul>
+
+							<button class="btn popup__border-gradient">Add to Favourites</button>
+						</div>
+
+						<div class="popup-controls--mobile">
+							<button class="popup-controls--mobile-btn border-gradient">
+								<img src="img/icons/like.svg" alt="icon">
+							</button>
+							<button class="popup-controls--mobile-btn border-gradient">
+								<img src="img/icons/share.svg" alt="icon">
+							</button>
+						</div>
+					</div>
+
+					<div class="popup__body">
+						<div class="popup__img-box">
+							<picture><source data-srcset="img/popular-search/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popup__img-preview" data-src="img/popular-search/2.jpg" alt="img"></picture>
+						</div>
+
+						<div class="popup__feature-row">
+							<div class="popup__feature-category">
+								<span class="popup__feature-label">Landscape</span>
+								<span class="popup__feature-label">Nature</span>
+								<span class="popup__feature-label">Desert</span>
+							</div>
+
+							<div class="popup__feature-info">
+								<div class="popup__feature-saved">
+									<span class="popup__feature-save-count">211</span>
+								</div>
+								<div class="popup__feature-viewport">1920x1080</div>
+							</div>
+						</div>
+
+						<div class="popup__descr">
+							<h1 class="popup__img-title">Name of the image</h1>
+							<h3 class="popup__img-subtitle">Short description</h3>
+							<p class="popup__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque odio nisi, auctor vel eros pretium, mollis dictum sem. Nullam et sapien imperdiet, porta ipsum vitae, tincidunt lectus. Nulla luctus accumsan nisi. Maecenas pharetra ante eu quam consequat mollis. Curabitur purus dui, dignissim eu sodales vitae, consequat sit amet dolor.
+							</p>
+						</div>
+					</div>
+
+					<div class="popup__more">
+						<h2 class="popup__more-title popup__img-title">More like this</h2>
+
+						<ul class="search__list more-list">
+							<li class="search__item search__item--1">
+								<div class="popular-search__top info-box">
+									<button class="popular-search__like like-btn">
+										<svg class="like">
+											<use xlink:href="#like"></use>
+										</svg>
+									</button>
+									<div class="popular-search__info search__info">
+										<div class="popular-search__saved saved">
+											<span class="popular-search__save-count save-count">211</span>
+										</div>
+										<div class="popular-search__viewport viewport">1920x1080</div>
+									</div>
+								</div>
+
+								<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
+									<picture><source data-srcset="img/popular-search/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/1.jpg" alt="img-1"></picture>
+								</a>
+
+								<div class="popular-search__bottom category-label-box">
+									<span class="popular-search__category category-label">Interior</span>
+									<span class="popular-search__category category-label">Desktop</span>
+									<span class="popular-search__category category-label">Computer</span>
+								</div>
+							</li>
+
+							<li class="search__item search__item--2">
+								<div class="popular-search__top info-box">
+									<button class="popular-search__like like-btn">
+										<svg class="like">
+											<use xlink:href="#like"></use>
+										</svg>
+									</button>
+									<div class="popular-search__info search__info">
+										<div class="popular-search__saved saved">
+											<span class="popular-search__save-count save-count">211</span>
+										</div>
+										<div class="popular-search__viewport viewport">1920x1080</div>
+									</div>
+								</div>
+
+								<a class="popular-search__link" href="#">
+									<picture><source data-srcset="img/popular-search/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/2.jpg" alt="img-2"></picture>
+								</a>
+
+								<div class="popular-search__bottom category-label-box">
+									<span class="popular-search__category category-label">Landscape</span>
+									<span class="popular-search__category category-label">Nature</span>
+									<span class="popular-search__category category-label">Desert</span>
+								</div>
+							</li>
+
+							<li class="search__item search__item--3">
+								<div class="popular-search__top info-box">
+									<button class="popular-search__like like-btn">
+										<svg class="like">
+											<use xlink:href="#like"></use>
+										</svg>
+									</button>
+									<div class="popular-search__info search__info">
+										<div class="popular-search__saved saved">
+											<span class="popular-search__save-count save-count">211</span>
+										</div>
+										<div class="popular-search__viewport viewport">1920x1080</div>
+									</div>
+								</div>
+
+								<a class="popular-search__link" href="#">
+									<picture><source data-srcset="img/popular-search/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/3.jpg" alt="img-3"></picture>
+								</a>
+
+								<div class="popular-search__bottom category-label-box">
+									<span class="popular-search__category category-label">City</span>
+									<span class="popular-search__category category-label">Skyscraper</span>
+									<span class="popular-search__category category-label">Megapolis</span>
+								</div>
+							</li>
+
+							<li class="search__item search__item--4">
+								<div class="popular-search__top info-box">
+									<button class="popular-search__like like-btn">
+										<svg class="like">
+											<use xlink:href="#like"></use>
+										</svg>
+									</button>
+									<div class="popular-search__info search__info">
+										<div class="popular-search__saved saved">
+											<span class="popular-search__save-count save-count">211</span>
+										</div>
+										<div class="popular-search__viewport viewport">1920x1080</div>
+									</div>
+								</div>
+
+								<a class="popular-search__link" href="#">
+									<picture><source data-srcset="img/popular-search/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/4.jpg" alt="img-4"></picture>
+								</a>
+
+								<div class="popular-search__bottom category-label-box">
+									<span class="popular-search__category category-label">Landscape</span>
+									<span class="popular-search__category category-label">Stars</span>
+									<span class="popular-search__category category-label">Night</span>
+								</div>
+							</li>
+
+							<li class="search__item search__item--5">
+								<div class="popular-search__top info-box">
+									<button class="popular-search__like like-btn">
+										<svg class="like">
+											<use xlink:href="#like"></use>
+										</svg>
+									</button>
+									<div class="popular-search__info search__info">
+										<div class="popular-search__saved saved">
+											<span class="popular-search__save-count save-count">211</span>
+										</div>
+										<div class="popular-search__viewport viewport">1920x1080</div>
+									</div>
+								</div>
+
+								<a class="popular-search__link" href="#">
+									<picture><source data-srcset="img/popular-search/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/5.jpg" alt="img-5"></picture>
+								</a>
+
+								<div class="popular-search__bottom category-label-box">
+									<span class="popular-search__category category-label">Food</span>
+									<span class="popular-search__category category-label">Berries</span>
+									<span class="popular-search__category category-label">Macro</span>
+								</div>
+							</li>
+
+							<li class="search__item search__item--6">
+								<div class="popular-search__top info-box">
+									<button class="popular-search__like like-btn">
+										<svg class="like">
+											<use xlink:href="#like"></use>
+										</svg>
+									</button>
+									<div class="popular-search__info search__info">
+										<div class="popular-search__saved saved">
+											<span class="popular-search__save-count save-count">211</span>
+										</div>
+										<div class="popular-search__viewport viewport">1920x1080</div>
+									</div>
+								</div>
+
+								<a class="popular-search__link" href="#">
+									<picture><source data-srcset="img/popular-search/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/popular-search/6.jpg" alt="img-6"></picture>
+								</a>
+
+								<div class="popular-search__bottom category-label-box">
+									<span class="popular-search__category category-label">Landscape</span>
+									<span class="popular-search__category category-label">Man</span>
+									<span class="popular-search__category category-label">Rock</span>
+								</div>
+							</li>
+						</ul>
+
+						<button class="show-more-btn btn popup__border-gradient">Load more</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20221011155438"></script>
+
+
+	<script src="js/app.min.js?_v=20221012214724"></script>
 </body>
 
 </html>
