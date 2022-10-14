@@ -2039,9 +2039,6 @@ button:hover .like {
   padding: 0 15px;
 }
 
-.no-webp .spoller__arrow-box{
-  background-image: url(../img/icons/circle.png); }
-
 .spoller__arrow-box {
   width: 48px;
   -webkit-box-flex: 0;
@@ -2059,6 +2056,7 @@ button:hover .like {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../img/icons/circle.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 48px;
@@ -3031,8 +3029,6 @@ button.swiper-pagination-bullet {
 }
 
 .webp .intro{ background-image: url(../img/intro/intro-bg.webp); }
-
-.webp .spoller__arrow-box{ background-image: url(../img/icons/circle.webp); }
 
 @media (max-width: 61.99875em){
 
