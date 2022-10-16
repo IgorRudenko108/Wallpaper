@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>One collections</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221016200654">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header" data-scroll data-scroll-show="100">
+			<div class="header__container">
+				<div class="header__inner">
+					<div class="header__item header__item--logo">
+						<div class="header__logo logo">
+							<a class="header__logo-link" href="#">Logo</a>
+						</div>
+					</div>
+
+					<div class="header__item header__search">
+						<form class="header__search-form" action="#">
+							<button class="header__search-btn">
+								<!-- <svg class="header__search-small">
+							<use xlink:href="#search-small"></use>
+						</svg> -->
+							</button>
+							<input class="header__search-input" type="text" placeholder="Search">
+						</form>
+					</div>
+
+					<div class="header__item header__item--burger">
+						<div class="header__menu menu">
+							<nav class="header__menu-body menu__body">
+
+								<div class="burger__item">
+									<form class="burger__search-form" action="#">
+										<button class="burger__search-btn"></button>
+										<input class="burger__search-input" type="text" placeholder="Search">
+									</form>
+								</div>
+
+								<ul class="header__menu-list menu__list">
+									<li class="header__menu-item menu__item"><a href="#" class="header__menu-link menu__link">Top</a></li>
+									<li class="header__menu-item menu__item"><a href="#" class="header__menu-link menu__link">New</a></li>
+									<li class="header__menu-item menu__item"><a href="#" class="header__menu-link menu__link">HD wallpaper</a></li>
+									<li class="header__menu-item menu__item"><a href="#" class="header__menu-link menu__link">Collections</a></li>
+									<li class="header__menu-item menu__item menu__item--fag"><a href="#" class="header__menu-link menu__link">FAQ</a></li>
+									<li class="header__menu-item menu__item menu__item--about"><a href="#" class="header__menu-link menu__link">About</a></li>
+									<li class="header__menu-item menu__item menu__item--contact"><a href="#" class="header__menu-link menu__link">Contact</a></li>
+									<li class="header__menu-item menu__item menu__item--blog"><a href="#" class="header__menu-link menu__link">Blog</a></li>
+								</ul>
+
+								<div class="burger__contacts">
+									<div class="burger__contacts-inner">
+										<ul class="burger__contacts-list contacts-list">
+											<li class="burger__contacts-item contacts-item">
+												<a class="burger__contacts-link contacts-item" href="#">
+													<img class="burger__contacts-icon contacts-icon" src="img/icons/instagram.svg" alt="instagram">
+												</a>
+											</li>
+
+											<li class="burger__contacts-item contacts-item">
+												<a class="burger__contacts-link contacts-link" href="#">
+													<img class="burger__contacts-icon contacts-icon" src="img/icons/telegram.svg" alt="telegram">
+												</a>
+											</li>
+
+											<li class="burger__contacts-item contacts-item">
+												<a class="burger__contacts-link contacts-link" href="#">
+													<img class="burger__contacts-icon contacts-icon" src="img/icons/facebook.svg" alt="facebook">
+												</a>
+											</li>
+										</ul>
+
+										<button class="burger__subscribe header__subscribe header-btn accent-btn">Subscribe</button>
+									</div>
+								</div>
+							</nav>
+
+							<button type="button" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+					</div>
+
+					<div class="header__item header__item--controls">
+						<div class="header__controls">
+							<div class="header__guest">
+								<button class="header__subscribe btn accent-btn">Subscribe</button>
+								<div class="header__login-wrapper" data-da=".header__menu-body,479.98,1">
+									<button class="header__login btn">Login</button>
+								</div>
+							</div>
+
+							<div class="header__user header__list">
+								<div class="header__profile btn">
+									<a class="menu__link header-btn" href="#">Profile</a>
+									<span class="menu__arrow">
+										<img class="menu__arrow-sabmenu" src="img/icons/arrow-down.svg" alt="arrow-down">
+									</span>
+
+									<ul class="menu__sub-list">
+										<li class="header__menu-subitem">
+											<a href="#" class="menu__sub-link">
+												<span class="header__menu-sublink-text">Profile Details</span>
+												<img class="header__menu-sublink-icon" src="img/icons/profile-details.svg" alt="profile details">
+											</a>
+										</li>
+										<li class="header__menu-subitem">
+											<a href="#" class="menu__sub-link">
+												<span class="header__menu-sublink-text">Favourites</span>
+												<img class="header__menu-sublink-icon" src="img/icons/favourites.svg" alt="favourites">
+											</a>
+										</li>
+										<li class="header__menu-subitem">
+											<a href="#" class="menu__sub-link">
+												<span class="header__menu-sublink-text">Upload Photos</span>
+												<img class="header__menu-sublink-icon" src="img/icons/upload.svg" alt="upload photos">
+											</a>
+										</li>
+										<li class="header__menu-subitem">
+											<a href="#" class="menu__sub-link header__logout">
+												<span class="header__menu-sublink-text">Logout</span>
+												<img class="header__menu-sublink-icon" src="img/icons/logout.svg" alt="logout">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<picture><source data-srcset="img/intro-bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="page-top-bg" data-src="img/intro-bg.png" alt="img"></picture>
+
+		<main class="page">
+			<section class="one-collection__intro intro-padding">
+				<div class="one-collection__container">
+					<h2 class="one-collection____title subtitle">Car Pictures Collection</h2>
+					<h3 class="popup__img-subtitle">Short Intro</h3>
+					<p class="popup__text text one-collection__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque odio nisi, auctor vel eros pretium, mollis dictum sem. Nullam et sapien imperdiet, porta ipsum vitae, tincidunt lectus. Nulla luctus accumsan nisi. Maecenas pharetra ante eu quam consequat mollis. Curabitur purus dui, dignissim eu sodales vitae, consequat sit amet dolor.
+					</p>
+
+					<div class="one-collection__body">
+						<h3 class="slider-title">Top Wallpaper Categories on This Week</h3>
+
+						<div class="one-collection__intro-content">
+							<div class="one-collection__inner">
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/1.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">JDM</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/2.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">BMW</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/3.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Mustang</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/4.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Jaguar</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/5.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Jeep</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/6.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Mclaren</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/7.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Ferrari</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/8.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Sport Car</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/9.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/9.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Lamborghini</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/10.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">Retro Car</h4>
+									</div>
+								</a>
+
+								<a class="one-collection__column" href="#">
+									<div class="top-picture__box">
+										<picture><source data-srcset="img/one-collection-intro/11.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="top-picture__img" data-src="img/one-collection-intro/11.jpg" alt="img"></picture>
+
+										<h4 class="top-picture__img-title">SUV</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div>
+			</section>
+			<div class="subscribe-block">
+				<div class="subscribe-block__body">
+					<div class="subscribe-block__container">
+						<div class="subscribe-block__inner">
+							<div class="subscribe-block__content">
+								<h2 class="subscribe-block__title">Subscribe for weekly fresh wallpapers</h2>
+								<p class="subscribe-block__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							</div>
+
+							<form class="subscribe-block__form" action="#">
+								<input class="subscribe-block__input" type="text" placeholder="Your Email adress">
+								<button class="subscribe-block__btn" type="submit"><span>subscribe</span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__body">
+				<div class="footer__container">
+
+					<div class="header__inner footer__inner">
+						<div class="footer__item">
+							<div class="header__logo logo">
+								<a class="header__logo-link" href="#">Logo</a>
+							</div>
+						</div>
+
+						<div class="footer__item">
+							<div class="footer__menu">
+								<nav class="footer__menu-body">
+
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">Top</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">New</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">HD wallpaper</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">Collections</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQ</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">About</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">Contact</a></li>
+										<li class="footer__menu-item"><a href="#" class="footer__menu-link">Blog</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<div class="header__item--controls footer__item--controls">
+							<div class="footer__social-box">
+								<ul class="popup__contacts-list contacts-list">
+									<li class="contacts-item">
+										<a class="contacts-item" href="#">
+											<img class="contacts-icon" src="img/icons/instagram.svg" alt="instagram">
+										</a>
+									</li>
+
+									<li class="contacts-item">
+										<a class="contacts-link" href="#">
+											<img class="contacts-icon" src="img/icons/telegram.svg" alt="telegram">
+										</a>
+									</li>
+
+									<li class="contacts-item">
+										<a class="contacts-link" href="#">
+											<img class="contacts-icon" src="img/icons/facebook.svg" alt="facebook">
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="header__controls">
+								<div class="header__guest">
+									<button class="footer__subscribe header__subscribe btn accent-btn">Subscribe</button>
+									<div class="header__login-wrapper footer__login" data-da=".header__menu-body,479.98,1">
+										<button class="header__login btn">Login</button>
+									</div>
+								</div>
+
+								<div class="header__user header__list">
+									<div class="header__profile btn footer__profile">
+										<a class="menu__link header-btn" href="#">Profile</a>
+										<span class="menu__arrow">
+											<img class="menu__arrow-sabmenu" src="img/icons/arrow-down.svg" alt="arrow-down">
+										</span>
+
+										<ul class="menu__sub-list">
+											<li class="header__menu-subitem">
+												<a href="#" class="menu__sub-link">
+													<span class="header__menu-sublink-text">Profile Details</span>
+													<img class="header__menu-sublink-icon" src="img/icons/profile-details.svg" alt="profile details">
+												</a>
+											</li>
+											<li class="header__menu-subitem">
+												<a href="#" class="menu__sub-link">
+													<span class="header__menu-sublink-text">Favourites</span>
+													<img class="header__menu-sublink-icon" src="img/icons/favourites.svg" alt="favourites">
+												</a>
+											</li>
+											<li class="header__menu-subitem">
+												<a href="#" class="menu__sub-link">
+													<span class="header__menu-sublink-text">Upload Photos</span>
+													<img class="header__menu-sublink-icon" src="img/icons/upload.svg" alt="upload photos">
+												</a>
+											</li>
+											<li class="header__menu-subitem">
+												<a href="#" class="menu__sub-link header__logout">
+													<span class="header__menu-sublink-text">Logout</span>
+													<img class="header__menu-sublink-icon" src="img/icons/logout.svg" alt="logout">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="footer-bottom__container">
+					<div class="footer-bottom__copyright">© Copyright 2022. Company Name</div>
+					<div class="footer-bottom__info">
+						<a class="footer-bottom__info-link" href="#">Privacy Policy</a>
+						<a class="footer-bottom__info-link" href="#">Terms & Conditions</a>
+						<a class="footer-bottom__info-link" href="#">Contact</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221016200654"></script>
+</body>
+
+</html>
