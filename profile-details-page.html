@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Search results</title>
+	<title>Profile Details</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -139,324 +139,45 @@
 		<picture><source data-srcset="img/intro-bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="page-top-bg" data-src="img/intro-bg.png" alt="img"></picture>
 
 		<main class="page">
-			<section class="search-result intro-padding">
-				<div class="search-result__container">
-					<div class="search-result__head">
-						<div class="search-result__top">
-							<div class="search-result__top-inner">
-								<div class="search-result__top-search">
-									<form class="search-result__search-form" action="#">
-										<button class="intro__search-btn"></button>
-										<input class="intro__search-input" type="text" placeholder="Search wallpapers...">
-									</form>
-								</div>
+			<section class="profile-details">
+				<div class="profile-details__container">
+					<div class="login__popup authorise__popup">
+						<div class="popup__wrapper">
+							<div class="authorise__popup-content popup__content profile-details-content">
+								<div class="popup__text">
 
-								<div class="select-box" data-one-select>
-									<select name="form[]" data-scroll data-class-modif="search-select">
-										<option data-class="option-class" value="1" selected>Any Orientation</option>
-										<option data-class="option-class" value="2">Landscape</option>
-										<option data-class="option-class" value="3">Portrait</option>
-										<option data-class="option-class" value="4">Square</option>
-									</select>
+									<div class="authorise__body">
+										<h1 class="authorise__title">Profile Details</h1>
 
-									<select name="form[]" data-scroll data-class-modif="search-select">
-										<option data-class="option-class" value="1" selected>Any Color</option>
-										<option data-class="option-class" value="2">Red</option>
-										<option data-class="option-class" value="3">Green</option>
-										<option data-class="option-class" value="4">Black</option>
-										<option data-class="option-class" value="5">White</option>
-									</select>
+										<form class="authorise__form signup__form form" data-ajax method="POST" action="sendmail.php">
+											<div class="authorise__form-name-box">
+												<input class="authorise__input authorise__input-name" data-required="email" type="text" name="form[]" placeholder="First Name" value="Anne">
+												<input class="authorise__input authorise__input-name" data-required="email" type="text" name="form[]" placeholder="Last Name" value="Bernards">
+											</div>
 
-									<select name="form[]" data-scroll data-class-modif="search-select">
-										<option data-class="option-class" value="" selected>Sort by</option>
-										<option data-class="option-class" value="1">Most Relevant</option>
-										<option data-class="option-class" value="2">Newest</option>
-										<option data-class="option-class" value="3">Popular</option>
-									</select>
+											<input class="authorise__input" data-required="email" type="text" name="form[]" placeholder="Email" value="anne.bern2022@gmail.com">
+											<input class="authorise__input" data-required="email" type="text" name="form[]" placeholder="Username" value="@anne.bern">
+											<div class="password-box">
+												<input class="authorise__input" type="password" placeholder="Password (min 8 char.)" value="nkj3n43434r34r">
+												<button class="form__viewpass" type="button"></button>
+												<img class="password-img" src="img/icons/eye.svg" alt="img">
+											</div>
+											<button class="authorise__form-btn btn accent-btn" type="submit">Save Changes</button>
+										</form>
+
+										<div class="authorise__bottom profile-details__bottom">
+											Need help or have questions?
+											<a class="authorise__signup profile-details__support" href="#" data-popup="#">Contact Support<img src="img/arrow-right.svg" alt="img"></a>
+										</div>
+									</div>
+
 								</div>
 							</div>
-
-							<div class="search-result__label-box">
-								<span class="popular-search__category category-label">Sun</span>
-								<span class="popular-search__category category-label">Sunrise</span>
-								<span class="popular-search__category category-label">Sunset</span>
-								<span class="popular-search__category category-label">Night</span>
-								<span class="popular-search__category category-label">Beach</span>
-								<span class="popular-search__category category-label">Water</span>
-								<span class="popular-search__category category-label">Lightning</span>
-								<span class="popular-search__category category-label">Ocean</span>
-								<span class="popular-search__category category-label">Ice</span>
-								<span class="popular-search__category category-label">Sky</span>
-								<span class="popular-search__category category-label">Fire</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="search-result__body">
-						<div class="popup__more">
-							<h3 class="slider-title">Search results for {Nature}</h3>
-
-							<ul class="search-result__list more-list">
-								<li class="search__item search__item--1">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/1.jpg" alt="img-1"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Interior</span>
-										<span class="popular-search__category category-label">Desktop</span>
-										<span class="popular-search__category category-label">Computer</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--2">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/2.jpg" alt="img-2"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Landscape</span>
-										<span class="popular-search__category category-label">Nature</span>
-										<span class="popular-search__category category-label">Desert</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--3">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/3.jpg" alt="img-3"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">City</span>
-										<span class="popular-search__category category-label">Skyscraper</span>
-										<span class="popular-search__category category-label">Megapolis</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--4">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/4.jpg" alt="img-4"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Landscape</span>
-										<span class="popular-search__category category-label">Stars</span>
-										<span class="popular-search__category category-label">Night</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--5">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/5.jpg" alt="img-5"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Food</span>
-										<span class="popular-search__category category-label">Berries</span>
-										<span class="popular-search__category category-label">Macro</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--6">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/6.jpg" alt="img-6"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Landscape</span>
-										<span class="popular-search__category category-label">Man</span>
-										<span class="popular-search__category category-label">Rock</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--7">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/7.jpg" alt="img-4"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Landscape</span>
-										<span class="popular-search__category category-label">Stars</span>
-										<span class="popular-search__category category-label">Night</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--8">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/8.jpg" alt="img-5"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Food</span>
-										<span class="popular-search__category category-label">Berries</span>
-										<span class="popular-search__category category-label">Macro</span>
-									</div>
-								</li>
-
-								<li class="search__item search__item--9">
-									<div class="popular-search__top info-box">
-										<button class="popular-search__like like-btn btn-like">
-											<svg class="like">
-												<use xlink:href="#like"></use>
-											</svg>
-										</button>
-										<div class="popular-search__info search__info">
-											<div class="popular-search__saved saved">
-												<span class="popular-search__save-count save-count">211</span>
-											</div>
-											<div class="popular-search__viewport viewport">1920x1080</div>
-										</div>
-									</div>
-
-									<a class="popular-search__link" href="#" data-popup="#image-preview__popup">
-										<picture><source data-srcset="img/search-result/9.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="popular-search__img" data-src="img/search-result/9.jpg" alt="img-6"></picture>
-									</a>
-
-									<div class="popular-search__bottom category-label-box">
-										<span class="popular-search__category category-label">Landscape</span>
-										<span class="popular-search__category category-label">Man</span>
-										<span class="popular-search__category category-label">Rock</span>
-									</div>
-								</li>
-							</ul>
-
-							<button class="show-more-btn btn">Load more results</button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<div class="subscribe-block">
-				<div class="subscribe-block__body">
-					<div class="subscribe-block__container">
-						<div class="subscribe-block__inner">
-							<div class="subscribe-block__content">
-								<h2 class="subscribe-block__title">Subscribe for weekly fresh wallpapers</h2>
-								<p class="subscribe-block__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-							</div>
-
-							<form class="subscribe-block__form" action="#">
-								<input class="subscribe-block__input" type="text" placeholder="Your Email adress">
-								<button class="subscribe-block__btn" type="submit"><span>subscribe</span></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</main>
-
 
 		<footer class="footer">
 			<div class="footer__body">
@@ -571,46 +292,6 @@
 			</div>
 		</footer>
 	</div>
-
-	<!-- search-small ------------------------------------------------------------------->
-	<svg display="none">
-		<symbol id="search-small" viewBox="0 0 24 24">
-			<path d="M14 14L20 20" stroke="" stroke-opacity="0.8" stroke-width="1.5" />
-			<circle cx="9.5" cy="9.5" r="5.75" stroke="" stroke-opacity="0.8" stroke-width="1.5" />
-		</symbol>
-	</svg>
-	<!-- /search-small ------------------------------------------------------------------->
-
-	<!-- arrow-down ------------------------------------------------------------------->
-	<svg display="none">
-		<symbol id="arrow-down" viewBox="0 0 20 12">
-			<path d="M1 1L10 10L19 1" stroke="" stroke-width="2.5" />
-		</symbol>
-	</svg>
-	<!-- /arrow-down ------------------------------------------------------------------->
-
-	<!-- like ------------------------------------------------------------------->
-	<svg display="none">
-		<symbol id="like" viewBox="0 0 28 28">
-			<path d="M8.16683 4.66675C4.94517 4.66675 2.3335 7.27842 2.3335 10.5001C2.3335 11.8133 2.42156 13.4082 3.91632 15.1521C5.41108 16.8959 14.0002 24.5005 14.0002 24.5005C14.0002 24.5005 22.5892 16.8959 24.084 15.1521C25.5788 13.4082 25.6668 11.8133 25.6668 10.5001C25.6668 7.27842 23.0552 4.66675 19.8335 4.66675C16.6118 4.66675 14.0002 7.27842 14.0002 10.5001C14.0002 7.27842 11.3885 4.66675 8.16683 4.66675Z" stroke="" stroke-opacity="0.8" stroke-width="2" />
-		</symbol>
-	</svg>
-	<!-- /like ------------------------------------------------------------------->
-
-	<!-- arrow-right ------------------------------------------------------------------->
-	<svg display="none">
-		<symbol id="arrow-right" viewBox="0 0 22 18">
-			<path d="M12.4138 17L20 9M20 9L12.4138 0.999999M20 9L6.71525e-07 9" stroke="" stroke-width="2" />
-		</symbol>
-	</svg>
-	<!-- /arrow-right ------------------------------------------------------------------->
-
-
-
-	<!-- <svg class="search-small">
-   <use xlink:href="#search-small"></use>
-</svg> -->
-
 
 	<div id="image-preview__popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -994,6 +675,7 @@
 			</div>
 		</div>
 	</div>
+
 
 
 	<script src="js/app.min.js?_v=20221019023446"></script>

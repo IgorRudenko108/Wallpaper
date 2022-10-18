@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221016200654">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221019023446">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,17 +20,13 @@
 				<div class="header__inner">
 					<div class="header__item header__item--logo">
 						<div class="header__logo logo">
-							<a class="header__logo-link" href="#">Logo</a>
+							<a class="header__logo-link" href="home.html">Logo</a>
 						</div>
 					</div>
 
 					<div class="header__item header__search">
 						<form class="header__search-form" action="#">
-							<button class="header__search-btn">
-								<!-- <svg class="header__search-small">
-							<use xlink:href="#search-small"></use>
-						</svg> -->
-							</button>
+							<button class="header__search-btn"></button>
 							<input class="header__search-input" type="text" placeholder="Search">
 						</form>
 					</div>
@@ -95,11 +91,11 @@
 							<div class="header__guest">
 								<button class="header__subscribe btn accent-btn">Subscribe</button>
 								<div class="header__login-wrapper" data-da=".header__menu-body,479.98,1">
-									<button class="header__login btn">Login</button>
+									<button class="header__login btn" data-popup="#login__popup">Login</button>
 								</div>
 							</div>
 
-							<div class="header__user header__list">
+							<div class="header__user header__list loggedin">
 								<div class="header__profile btn">
 									<a class="menu__link header-btn" href="#">Profile</a>
 									<span class="menu__arrow">
@@ -108,25 +104,25 @@
 
 									<ul class="menu__sub-list">
 										<li class="header__menu-subitem">
-											<a href="#" class="menu__sub-link">
+											<a href="profile-details-page.html" class="menu__sub-link">
 												<span class="header__menu-sublink-text">Profile Details</span>
 												<img class="header__menu-sublink-icon" src="img/icons/profile-details.svg" alt="profile details">
 											</a>
 										</li>
 										<li class="header__menu-subitem">
-											<a href="#" class="menu__sub-link">
+											<a href="favourites-page.html" class="menu__sub-link">
 												<span class="header__menu-sublink-text">Favourites</span>
 												<img class="header__menu-sublink-icon" src="img/icons/favourites.svg" alt="favourites">
 											</a>
 										</li>
 										<li class="header__menu-subitem">
-											<a href="#" class="menu__sub-link">
+											<a href="upload-photos-page.html" class="menu__sub-link">
 												<span class="header__menu-sublink-text">Upload Photos</span>
 												<img class="header__menu-sublink-icon" src="img/icons/upload.svg" alt="upload photos">
 											</a>
 										</li>
 										<li class="header__menu-subitem">
-											<a href="#" class="menu__sub-link header__logout">
+											<a href="#" class="menu__sub-link header__logout" data-popup="#delete__popup">
 												<span class="header__menu-sublink-text">Logout</span>
 												<img class="header__menu-sublink-icon" src="img/icons/logout.svg" alt="logout">
 											</a>
@@ -720,7 +716,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/anime.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/anime.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -747,7 +743,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/arts.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/arts.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -771,7 +767,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/backgrounds.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/backgrounds.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -801,7 +797,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/car.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/car.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -830,7 +826,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/cartoon.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/cartoon.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -857,7 +853,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/city.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/city.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -887,7 +883,7 @@
 
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/flowers.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/flowers.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -913,10 +909,9 @@
 							</div>
 						</div>
 
-
 						<div class="collection-section__column">
 							<div class="collection-section__item">
-								<a class="collection-section__link" href="#">
+								<a class="collection-section__link" href="one-collection-page.html">
 									<div class="collection-section__img-box">
 										<picture><source data-srcset="img/section-collections/color.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="collection-section__img" data-src="img/section-collections/color.jpg" alt="img"></picture>
 										<div class="collection-section__link-bottom">
@@ -1241,7 +1236,7 @@
 					<div class="header__inner footer__inner">
 						<div class="footer__item">
 							<div class="header__logo logo">
-								<a class="header__logo-link" href="#">Logo</a>
+								<a class="header__logo-link" href="home.html">Logo</a>
 							</div>
 						</div>
 
@@ -1287,10 +1282,10 @@
 							</div>
 
 							<div class="header__controls">
-								<div class="header__guest">
+								<div class="header__guest loggedin">
 									<button class="footer__subscribe header__subscribe btn accent-btn">Subscribe</button>
 									<div class="header__login-wrapper footer__login" data-da=".header__menu-body,479.98,1">
-										<button class="header__login btn">Login</button>
+										<button class="header__login btn" data-popup="#login__popup">Login</button>
 									</div>
 								</div>
 
@@ -1303,25 +1298,25 @@
 
 										<ul class="menu__sub-list">
 											<li class="header__menu-subitem">
-												<a href="#" class="menu__sub-link">
+												<a href="profile-details-page.html" class="menu__sub-link">
 													<span class="header__menu-sublink-text">Profile Details</span>
 													<img class="header__menu-sublink-icon" src="img/icons/profile-details.svg" alt="profile details">
 												</a>
 											</li>
 											<li class="header__menu-subitem">
-												<a href="#" class="menu__sub-link">
+												<a href="favourites-page.html" class="menu__sub-link">
 													<span class="header__menu-sublink-text">Favourites</span>
 													<img class="header__menu-sublink-icon" src="img/icons/favourites.svg" alt="favourites">
 												</a>
 											</li>
 											<li class="header__menu-subitem">
-												<a href="#" class="menu__sub-link">
+												<a href="upload-photos-page.html" class="menu__sub-link">
 													<span class="header__menu-sublink-text">Upload Photos</span>
 													<img class="header__menu-sublink-icon" src="img/icons/upload.svg" alt="upload photos">
 												</a>
 											</li>
 											<li class="header__menu-subitem">
-												<a href="#" class="menu__sub-link header__logout">
+												<a href="#" class="menu__sub-link header__logout" data-popup="#delete__popup">
 													<span class="header__menu-sublink-text">Logout</span>
 													<img class="header__menu-sublink-icon" src="img/icons/logout.svg" alt="logout">
 												</a>
@@ -1372,6 +1367,14 @@
 		</symbol>
 	</svg>
 	<!-- /like ------------------------------------------------------------------->
+
+	<!-- arrow-right ------------------------------------------------------------------->
+	<svg display="none">
+		<symbol id="arrow-right" viewBox="0 0 22 18">
+			<path d="M12.4138 17L20 9M20 9L12.4138 0.999999M20 9L6.71525e-07 9" stroke="" stroke-width="2" />
+		</symbol>
+	</svg>
+	<!-- /arrow-right ------------------------------------------------------------------->
 
 
 
@@ -1633,8 +1636,138 @@
 		</div>
 	</div>
 
+	<div id="login__popup" aria-hidden="true" class="popup login__popup authorise__popup">
+		<div class="popup__wrapper">
+			<div class="authorise__popup-content popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__text">
 
-	<script src="js/app.min.js?_v=20221016200654"></script>
+					<div class="authorise__body">
+						<h1 class="authorise__title">Login</h1>
+
+						<form class="authorise__form form" data-ajax method="POST" action="sendmail.php">
+							<input class="authorise__input" data-required="email" type="text" name="form[]" placeholder="Email">
+							<input class="authorise__input" type="password" placeholder="Password">
+							<button class="authorise__form-btn btn accent-btn" type="submit">Login</button>
+						</form>
+
+						<div class="authorise__remember">
+							<div class="authorise__remember-checkbox form__item">
+								<div class="checkbox">
+									<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+									<label for="formAgreement" class="checkbox__label"><span>Remember me</span></label>
+								</div>
+							</div>
+
+							<a class="authorise__forgot-password" data-popup="#reset-password__popup" href="#">Forgot password?</a>
+						</div>
+
+						<div class="authorise__continue">
+							<button class="authorise__continue-btn authorise__google btn">Continue with <span>Google</span></button>
+							<button class="authorise__continue-btn authorise__facebook btn">Continue with <span>Facebook</span></button>
+						</div>
+
+						<div class="authorise__bottom">
+							Don’t have an account yet?
+							<a class="authorise__signup" href="#" data-popup="#signup__popup">Sign Up <img src="img/arrow-right.svg" alt="img"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="signup__popup" aria-hidden="true" class="popup login__popup authorise__popup">
+		<div class="popup__wrapper">
+			<div class="authorise__popup-content popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__text">
+
+					<div class="authorise__body">
+						<h1 class="authorise__title">Sign Up</h1>
+
+						<form class="authorise__form signup__form form" data-ajax method="POST" action="sendmail.php">
+							<div class="authorise__form-name-box">
+								<input class="authorise__input authorise__input-name" data-required="email" type="text" name="form[]" placeholder="First Name">
+								<input class="authorise__input authorise__input-name" data-required="email" type="text" name="form[]" placeholder="Last Name">
+							</div>
+
+							<input class="authorise__input" data-required="email" type="text" name="form[]" placeholder="Email">
+							<input class="authorise__input" data-required="email" type="text" name="form[]" placeholder="Username">
+							<input class="authorise__input" type="password" placeholder="Password (min 8 char.)">
+							<button class="authorise__form-btn btn accent-btn" type="submit">Create Account</button>
+						</form>
+
+						<p class="authorise__separator">
+							Or
+						</p>
+
+						<div class="authorise__continue">
+							<button class="authorise__continue-btn authorise__google btn">Continue with <span>Google</span></button>
+							<button class="authorise__continue-btn authorise__facebook btn">Continue with <span>Facebook</span></button>
+						</div>
+
+						<div class="authorise__bottom">
+							Already have an account?
+							<a class="authorise__signup" href="#" data-popup="#login__popup">Login<img src="img/arrow-right.svg" alt="img"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="reset-password__popup" aria-hidden="true" class="popup login__popup authorise__popup">
+		<div class="popup__wrapper">
+			<div class="authorise__popup-content popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__text">
+
+					<div class="authorise__body">
+						<h1 class="authorise__title">Reset password</h1>
+
+						<form class="authorise__form form" data-ajax method="POST" action="sendmail.php">
+							<input class="authorise__input" data-required="email" type="text" name="form[]" placeholder="Email">
+							<button class="authorise__form-btn btn accent-btn" type="submit">Reset password</button>
+						</form>
+
+						<div class="authorise__bottom">
+							<a class="authorise__signup" href="#" data-popup="#login__popup">Back to Login<img src="img/arrow-right.svg" alt="img"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="delete__popup" aria-hidden="true" class="popup delete__popup">
+		<div class="popup__wrapper">
+			<div class="delete__popup-content popup__content">
+				<div class="popup__text">
+
+					<div class="authorise__body">
+						<!-- <h1 class="authorise__title">Delete?</h1> -->
+						<h1 class="authorise__title">Logout?</h1>
+
+						<!-- <p class="delete__popup-text">Are you sure you want to delete this photo?</p> -->
+						<p class="delete__popup-text">Are you sure you want to logout?</p>
+
+						<div class="delete__popup-controls">
+							<button class="delete__popup-btn btn popup__border-gradient" data-close>Cancel</button>
+							<button class="delete__popup-btn btn accent-btn">Confirm</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20221019023446"></script>
 </body>
 
 </html>

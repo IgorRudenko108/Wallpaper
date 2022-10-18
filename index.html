@@ -8,38 +8,45 @@
 </head>
 
 <body>
+	<picture><source srcset="img/preview-bg.webp" type="image/webp"><img class="preview-bg" src="img/preview-bg.png" alt="img"></picture>
+
 	<div class="rootpage">
 		<h1>Верстка «Wallpaper»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
+
+		<h2>Готовые страницы:</h2>
 		<ol class="rootpage__list">
 			<li><a target="_blank" href="home.html">Home</a></li>
 			<li><a target="_blank" href="search-results-page.html">Search results</a></li>
 			<li><a target="_blank" href="collections-page.html">Collections</a></li>
 			<li><a target="_blank" href="one-collection-page.html">One collections</a></li>
+			<li><a target="_blank" href="category-page.html">Category page</a></li>
+			<li><a target="_blank" href="blog-general-page.html">Blog (general)</a></li>
+			<li><a target="_blank" href="blog-post-page.html">Blog (post)</a></li>
+			<li><a target="_blank" href="profile-details-page.html">Profile Details</a></li>
+			<li><a target="_blank" href="upload-photos-page.html">Upload Photos</a></li>
+			<li><a target="_blank" href="favourites-page.html">Favourites</a></li>
 		</ol>
-		<h2>Попапи:</h2>
+
+		<h2>Попапы:</h2>
 		<ol class="rootpage__list">
 			<li><a target="_blank" href="home.html#image-preview__popup">Image preview</a></li>
+			<li><a target="_blank" href="home.html#login__popup">Login popup</a></li>
+			<li><a target="_blank" href="home.html#signup__popup">Signup popup</a></li>
+			<li><a target="_blank" href="home.html#reset-password__popup">Reset password popup</a></li>
+			<li><a target="_blank" href="home.html#delete__popup">Confirmation popup</a></li>
 		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
+
 		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">i.rudenko108@gmail.com</a></p>
+			<h2>Мои контакты:</h2>
+			<p>Email: <a href="mailto:email@gmail.com">i.rudenko108@gmail.com</a></p>
 			<p>Telegram: <a href="https://t.me/rudenko_igorrr">https://t.me/rudenko_igorrr</a></p>
 		</div>
 	</div>
 </body>
 <style>
 	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
 
+	/* @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap"); */
 	*,
 	*::before,
 	*::after {
@@ -57,14 +64,24 @@
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background-color: #5e5373;
+		background-color: #10121F;
+		background-image: url(img/intro-bg.png);
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
 	}
 
 	body {
-		font-family: Montserrat;
+		font-family: "Poppins", sans-serif;
 		font-size: 100%;
 		line-height: 1;
-		font-size: 1rem;
+		font-size: 18px;
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	body::-webkit-scrollbar {
+		display: none;
 	}
 
 	a {
@@ -74,7 +91,7 @@
 
 	a:visited {
 		text-decoration: underline;
-		color: #aaa768;
+		/* color: #aaa768; */
 	}
 
 	a:hover {
@@ -96,10 +113,11 @@
 	}
 
 	.rootpage {
-		padding: 30px;
+		padding: 50px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		position: relative;
 	}
 
 	@media (max-width: 767px) {
@@ -111,7 +129,7 @@
 	h1 {
 		color: #ebe691;
 		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
+		margin-bottom: 50px;
 	}
 
 	@media (max-width: 767px) {
@@ -134,11 +152,6 @@
 		}
 	}
 
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
 	.rootpage__list {
 		margin: 0px 0px 2.25rem 1.25rem;
 	}
@@ -147,34 +160,24 @@
 		margin: 0px 0px 15px 0px;
 	}
 
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
 	.rootpage__contacts {
-		background: #32b5a4;
-
+		margin-top: 100px;
 	}
 
-	.rootpage__contacts a {
-		color: #ebe691;
+	.rootpage__contacts p {
+		margin-bottom: 10px;
 	}
 
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
+	.preview-bg {
+		position: absolute;
+		top: -200px;
+		right: -160px;
+	}
+
+	@media (max-width: 767.98px) {
+		.preview-bg {
+			display: none;
+		}
 	}
 </style>
 
