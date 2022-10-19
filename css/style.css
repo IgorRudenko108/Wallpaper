@@ -3581,6 +3581,11 @@ button.swiper-pagination-bullet {
   .main-title {
     font-size: 3rem;
   }
+
+  .top-slider__column {
+    min-height: 281px;
+    min-width: 315px;
+  }
 }
 
 @media (min-width: 61.99875em) {
