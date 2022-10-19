@@ -1225,6 +1225,8 @@ body::after {
 
 .like-btn {
   margin: 0 8px 8px 0;
+  max-width: 31px;
+  max-height: 25px;
 }
 
 .btn-like.liked .like {
@@ -1400,6 +1402,10 @@ button:hover .like {
 .intro-padding {
   padding-top: 165px;
   padding-bottom: 40px;
+}
+
+.slider-slide {
+  margin-right: 20px;
 }
 
 .menu__sub-list {
@@ -3623,6 +3629,21 @@ button.swiper-pagination-bullet {
   .burger__contacts {
     display: none;
   }
+
+  .slider {
+    min-width: 965px;
+    min-height: 608px;
+  }
+
+  .slide {
+    min-width: 965px;
+    min-height: 608px;
+  }
+
+  .search__list {
+    min-width: 965px;
+    min-height: 608px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -3792,6 +3813,10 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .delete__popup-content {
+    max-width: 495px;
   }
 
   .intro-padding {
@@ -4036,6 +4061,11 @@ button.swiper-pagination-bullet {
     grid-template-rows: repeat(7, 1fr);
     gap: 15px;
     max-height: 1000px;
+  }
+
+  .search__item {
+    min-width: 300px !important;
+    min-height: 225px !important;
   }
 
   .search__item--1,
