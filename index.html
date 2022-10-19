@@ -1,15 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Верстка «Wallpaper»</title>
+
+	<style>
+		*,
+		*::before,
+		*::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #10121F;
+			background-image: url(img/intro-bg.png);
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: cover;
+		}
+
+		body {
+			font-family: "Poppins", sans-serif;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 18px;
+			position: relative;
+			overflow-x: hidden;
+		}
+
+		body::-webkit-scrollbar {
+			display: none;
+		}
+
+		a {
+			text-decoration: underline;
+			color: #ebe691
+		}
+
+		a:visited {
+			text-decoration: underline;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		img {
+			vertical-align: top;
+		}
+
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+
+		.rootpage {
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			position: relative;
+		}
+
+		@media (max-width: 767px) {
+			.rootpage {
+				padding: 30px 15px;
+			}
+		}
+
+		h1 {
+			color: #ebe691;
+			font-size: 2.5rem;
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+
+		h2 {
+			color: #ebe691;
+			font-size: 1.25rem;
+			margin: 0px 0px 1rem 0px;
+		}
+
+		@media (max-width: 767px) {
+			h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+
+		.rootpage__list {
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+
+		.rootpage__list li:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+
+		.rootpage__contacts {
+			margin-top: 100px;
+		}
+
+		.rootpage__contacts p {
+			margin-bottom: 10px;
+		}
+
+		.preview-bg {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		@media (max-width: 767.98px) {
+			.preview-bg {
+				display: none;
+			}
+		}
+	</style>
 </head>
 
 <body>
-<!-- 	<picture><source srcset="img/preview-bg.webp" type="image/webp"><img class="preview-bg" src="img/preview-bg.png" alt="img"></picture> -->
-
 	<div class="rootpage">
 		<h1>Верстка «Wallpaper»</h1>
 
@@ -43,142 +175,5 @@
 		</div>
 	</div>
 </body>
-<style>
-	@charset "UTF-8";
-
-	/* @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap"); */
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #10121F;
-		background-image: url(img/intro-bg.png);
-		background-repeat: no-repeat;
-		background-position: top;
-		background-size: cover;
-	}
-
-	body {
-		font-family: "Poppins", sans-serif;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 18px;
-		position: relative;
-		overflow-x: hidden;
-	}
-
-	body::-webkit-scrollbar {
-		display: none;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		/* color: #aaa768; */
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 50px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		position: relative;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin-bottom: 50px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts {
-		margin-top: 100px;
-	}
-
-	.rootpage__contacts p {
-		margin-bottom: 10px;
-	}
-
-	.preview-bg {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-
-	@media (max-width: 767.98px) {
-		.preview-bg {
-			display: none;
-		}
-	}
-</style>
 
 </html>
